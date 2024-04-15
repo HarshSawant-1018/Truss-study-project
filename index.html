@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #008DDA;
+        }
+
+        h1 {
+            color: #ACE2E1;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h3 {
+            color: #41C9E2;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2 {
+            color: #ACE2E1;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p,
+        ol,
+        ul {
+            color: #F7EEDD;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+       a{text-decoration: none;
+        color: #41C9E2;
+    } 
+
+
+    img{height: 240px;
+    width: 240px;}
+    </style>
+
+</head>
+
+
+<body>
+    <h1>TRUSS</h1>
+    <h2>Introduction to Truss</h2>
+
+    <ul>
+        <li> A truss is a structural framework made up of straight members, typically arranged in triangular patterns,
+            designed to support loads while distributing them evenly across its various components. </li>
+        <li>Trusses are commonly used in construction to provide support for roofs, bridges, towers, and other
+            structures</li>
+        <li>The triangular arrangement of members in a truss helps to efficiently transfer forces through tension and
+            compression, resulting in a lightweight yet sturdy structure</li>
+        <li>Trusses are often constructed from materials such as wood, steel, or aluminum, and their design can vary
+            depending on the specific requirements of the project.</li>
+    </ul>
+    <h3>Why should we study truss ?
+
+    </h3>
+   
+    <P>Studying trusses is crucial due to their pervasive presence and critical role in numerous real-world
+        applications. Trusses are integral components in the construction of bridges, supporting immense loads while
+        spanning great distances. For example, the Warren truss design is frequently utilized in bridge construction due
+        to its strength and versatility. In roofing systems, trusses provide structural support, allowing for large open
+        spaces without the need for interior columns. This is particularly evident in arenas, warehouses, and exhibition
+        halls where clear spans are essential for functionality and aesthetics. Moreover, the use of trusses extends to
+        telecommunications towers, where their lightweight yet robust design enables the installation of antennas and
+        equipment at significant heights. Even in everyday structures like residential buildings, trusses play a vital
+        role, distributing loads efficiently to ensure the stability and safety of the roof. By studying trusses,
+        engineers gain insights into optimizing designs for various applications, reducing material usage, and enhancing
+        structural integrity, ultimately contributing to the advancement of infrastructure worldwide.
+
+
+
+
+
+    </P>
+    <h3>Two Force Members</h3>
+    <p>Before we discuss the structure of trusses, we must begin with defining two force members:<br>
+        A two force member is a body that has forces (and only forces, no moments) acting on it in only two locations.
+        In order to have a two force member in static equilibrium, the net force at each location must be equal,
+        opposite, and collinear. This will result in all two force members being in either tension or compression as
+        shown in the diagram
+    </p>
+    <img src="./two force mem.png" alt="Two force member image" />
+    <h3>How to calculate force ?</h3>
+    <p>To determine these unknowns, we have two methods available: the method of joints, and the method of sections.
+        Both will give the same results, but each through a different process.
+    </p>
+    <h3>Method of Joints</h3>
+    <P>The method of joints focuses on the joints, or the connection points where the members come together. We assume
+        we have a pin at each of these points that we model as a particle, we draw out the free body diagram for each
+        pin, and then write out the equilibrium equations for each pin. This will result in a large number of
+        equilibrium equations that we can use to solve for a large number of unknown forces.
+    </P>
+    <h3>Method of Joints</h3>
+    <ol>
+        <li> Use equilibrium of complete truss to find support reactions.</li>
+        <li>Identify zero force member by inspection.</li>
+        <li>Draw F.B.D. of a joint where there are at most two unknowns. Assume unknown forces in members to be
+            tensile,i.e.,directed away from the point.
+            Use ∑fx = 0 and ∑fy = 0 to find the two unknown forces.</li>
+        <li>If the answer is positive, the force is tensile and compressive if it is negative</li>
+        <li>Proceed to the next joint where there are atmost two unknowns</li>
+        <li>At the last joint, verify ∑fx = 0 and ∑fy = 0 .</li>
+
+    </ol>
+    <h3>Method of Section</h3>
+    <p>The method of sections involves pretending to split the truss into two or more different sections and then
+        analyzing each section as a separate rigid body in equilibrium. In this method we determine the appropriate
+        sections, draw free body diagrams for each section, and then write out the equilibrium equations for each
+        section.
+    </p>
+    <h3>Method of Section</h3>
+    <ol>
+        <li>Use equilibrium of complete truss to find support reactions.</li>
+        <li>Identify zero force members by inspection.</li>
+        <li>Divide the truss into two parts by passing a section through it which cuts at the most three members in
+            which forces are unknown.</li>
+        <li> Draw F.B.D. of any one part of the truss assuming tensile forces in members cut by the section.</li>
+        <li>Use ∑fx = 0 , ∑fy = 0 and ∑M = 0 to find three unknowns.</li>
+
+    </ol>
+    <h2>Types of Truss</h2>
+
+    <h3><a href="https://www.structuralbasics.com/warren-truss/" >Warren Truss</a></h3>
+    <img src="./overview-of-warren-truss-with-different-members.jpg" alt="Warren Truss Image">
+
+    <h3><a href="https://www.structuralbasics.com/pratt-truss/">Pratt truss</a></h3>
+    <img src="./Pratt-truss-member-names.jpg" alt="Pratt Truss Image">
+    
+    <h3><a href="https://www.structuralbasics.com/howe-truss/">Howe Truss</a></h3>
+    <img src="./howe-truss-members-1.jpg" alt="Howe truss image">
+
+    <h3><a href="https://www.structuralbasics.com/flat-truss/">Flat Truss</a></h3>
+    <img src="./Flat-truss-member-names.jpg" alt="Flat Truss image">
+
+    <h3><a href="https://www.structuralbasics.com/queen-post-truss/">Queen Post Truss</a></h3>
+    <img src="./queen-post-truss-members-1536x697.jpg" alt="queen-post-truss image">
+
+    <h3><a href="https://www.structuralbasics.com/king-post-truss/">King Post Truss</a></h3>
+    <img src="./King-post-truss-member-names.jpg" alt="king-post-truss image">
+    
+    <h3><a href="https://www.structuralbasics.com/fink-truss/">Fink Truss</a></h3>
+    <img src="./Fink-truss-member-names.jpg" alt="fink-truss image">
+    
+    
+    
+    <h2><a href="https://www.mentimeter.com/app/presentation/al5f672kuec6gwgnt1trp62ac7557w4a/dm4atxdkxmw4/edit">Lets
+            test your knowledge</a></h2>
+</body>
+
+</html>
